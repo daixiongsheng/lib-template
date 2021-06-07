@@ -1,0 +1,47 @@
+.content {
+  font-size: 30px
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $codeBgColor;
+  border-radius: 2px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: $accentColor;
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: $borderColor;
+}
+
+*::-webkit-scrollbar-corner {
+  background: $badgeErrorColor;
+}
+
+.custom-block
+  &.tip
+    background-color $tipBgColor
+    border-color $tipColor
+  &.warning
+    background-color $warnBgColor
+    border-color darken($warnColor, 35%)
+    color darken($warnColor, 70%)
+    .custom-block-title
+      color darken($warnColor, 50%)
+    a
+      color $textColor
+  &.danger
+    background-color $dangerBgColor
+    border-color darken($dangerColor, 20%)
+    color darken($dangerColor, 70%)
+    .custom-block-title
+      color darken($dangerColor, 40%)
+  &.details
+    background-color $detailsBgColor

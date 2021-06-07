@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "removeComments": false,
+    "allowUnreachableCode": true,
+    "strict": true,
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "preserveConstEnums": true,
+    "downlevelIteration": true,
+    "declaration": true,
+    "declarationDir": "./types",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "sourceMap": false,
+    "baseUrl": ".",
+    "rootDir": "./src",
+    "outDir": "./types",
+    "noImplicitThis": false,
+    "pretty": true,
+    "allowJs": true,
+    "typeRoots": [
+      "node_modules/@types",
+    ],
+    "lib": [
+      "esnext",
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "output",
+    "lib",
+    "tests"
+  ],
+  "include": [
+    "./src",
+  ],
+  "compileOnSave": false,
+  "forceConsistentCasingInFileNames": false,
+}
